@@ -1,0 +1,203 @@
+/* Calendar */
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Open Sans';
+}
+.hide {
+  display: none;
+}
+#events-calendar > nav {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#events-calendar > nav > .nav {
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+}
+#events-calendar > nav > .nav.hide {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#events-calendar > nav > .nav svg {
+  fill: #777;
+}
+#events-calendar > nav > .nav:hover svg {
+  fill: #000;
+}
+#events-calendar > nav > .title {
+  color: #666;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -1px;
+  position: relative;
+}
+#events-calendar > nav > .title strong {
+  font-weight: 800;
+}
+
+/* Calendar: Year */
+#events-calendar > .YYYY {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  bottom: 10px;
+}
+
+/* Calendar: Months */
+#events-calendar > .YYYY > .M {
+  float: left;
+  width: calc((100% - 50px) / 4);
+  margin-left: 10px;
+  text-align: center;
+}
+
+/* Calendar: Rows */
+#events-calendar > .YYYY[data-w="16"] > .M[data-w="4"] {
+  height: calc(100%/16*4);
+}
+#events-calendar > .YYYY[data-w="16"] > .M[data-w="5"] {
+  height: calc(100%/16*5);
+}
+#events-calendar > .YYYY[data-w="16"] > .M[data-w="6"] {
+  height: calc(100%/16*6);
+}
+#events-calendar > .YYYY[data-w="17"] > .M[data-w="4"] {
+  height: calc(100%/17*4);
+}
+#events-calendar > .YYYY[data-w="17"] > .M[data-w="5"] {
+  height: calc(100%/17*5);
+}
+#events-calendar > .YYYY[data-w="17"] > .M[data-w="6"] {
+  height: calc(100%/17*6);
+}
+#events-calendar > .YYYY[data-w="18"] > .M[data-w="4"] {
+  height: calc(100%/18*4);
+}
+#events-calendar > .YYYY[data-w="18"] > .M[data-w="5"] {
+  height: calc(100%/18*5);
+}
+#events-calendar > .YYYY[data-w="18"] > .M[data-w="6"] {
+  height: calc(100%/18*6);
+}
+
+/* Calendar: Month-names */
+#events-calendar > .YYYY > .M > .MMMM {
+  color: #444;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+#events-calendar > .YYYY > .M > .ddd {
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  width: calc(100%/7);
+  float: left;
+}
+#events-calendar > .YYYY > .M > .ddd:before {
+  content: attr(data-ddd);
+}
+
+/* Calendar: Days */
+#events-calendar > .YYYY > .M > .MM {
+  clear: both;
+  width: 100%;
+  height: calc(100% - 3.5em);
+}
+#events-calendar > .YYYY > .M[data-w="4"] > .MM > .D {
+  height: calc((100% + 3px) / 4);
+}
+#events-calendar > .YYYY > .M[data-w="5"] > .MM > .D {
+  height: calc((100% + 4px) / 5);
+}
+#events-calendar > .YYYY > .M[data-w="6"] > .MM > .D {
+  height: calc((100% + 5px) / 6);
+}
+#events-calendar > .YYYY > .M > .MM > .D {
+  float: left;
+  width: calc((100% + 6px) / 7);
+  position: relative;
+  border: 1px solid #DEDEDE;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #333;
+  background: #fff;
+  text-decoration: none;
+}
+#events-calendar > .YYYY > .M > .MM > .D.active {
+  font-weight: bold;
+  background: #32358f;
+  color: #fff;
+  box-shadow: inset 1px 0px 0px #fff, inset -1px 0px 0px #fff, inset 0px -1px 0px #fff, inset 0px 1px 0px #fff;
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="1"] {
+  margin-left: calc(((100% + 6px) / 7) * 1 - 1px);
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="2"] {
+  margin-left: calc(((100% + 6px) / 7) * 2 - 2px);
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="3"] {
+  margin-left: calc(((100% + 6px) / 7) * 3 - 3px);
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="4"] {
+  margin-left: calc(((100% + 6px) / 7) * 4 - 4px);
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="5"] {
+  margin-left: calc(((100% + 6px) / 7) * 5 - 5px);
+}
+#events-calendar > .YYYY > .M > .MM > .D:first-child[data-d="6"] {
+  margin-left: calc(((100% + 6px) / 7) * 6 - 6px);
+}
+#events-calendar > .YYYY > .M > .MM > .D > .num {
+  position: absolute;
+  font-size: 11px;
+  top: 0px;
+  left: 4px;
+}
+#events-calendar > .YYYY > .M > .MM > .D > .date-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 56%;
+}
+#events-calendar > .YYYY > .M > .MM > .D .date-content .date-event {
+  margin-top: 2px;
+}
+.date-content .date-event.ui.label:first-child {
+  margin-left: .14285714em;
+}
+#events-calendar > .YYYY > .M > .MM > .D:hover > .num {
+  font-weight: 700;
+}
+
+
+/* Semantic-UI overrides */
+strong { font-weight: 600; }
+.events-calendar-modal .ui.popup { padding: .2em .5em; }
+.events-calendar-modal .ui.header .sub.header {
+  margin-top: 1em;
+}
+.events-calendar-modal.ui.modal .actions > .button {
+  margin-left: 0;
+}
+.events-calendar-modal .ui.bulleted.list {
+  margin-left: 2rem;
+}
+.events-calendar-modal .ui.bulleted.list .list > .item::before,
+.events-calendar-modal .ui.bulleted.list > .item::before {
+  font-size: 2em;
+}

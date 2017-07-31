@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.publish/
+package-lock.json
+src/css/app.min.css
+src/js/app.min.js

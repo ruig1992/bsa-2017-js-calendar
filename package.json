@@ -1,0 +1,34 @@
+{
+  "name": "ruigdan_bsa2017_js_calendar",
+  "version": "1.0.0",
+  "description": "BSA 2017. JS Task: Calendar events",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ruig1992/bsa-2017-js-calendar.git"
+  },
+  "author": "Ruslan Danylevskyj",
+  "license": "ISC",
+  "homepage": "https://github.com/ruig1992/bsa-2017-js-calendar",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.4.0",
+    "del": "^3.0.0",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^0.4.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-inject-string": "^1.1.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "imagemin-pngquant": "^5.0.1"
+  }
+}
