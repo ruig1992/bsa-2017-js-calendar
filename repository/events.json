@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "date": "2017-07-31",
+    "title": "Finish the BSA 2017 Homework by Javascript Calendar",
+    "description": "Be sure to finish the BSA 2017 Javascript homework, because today is the last day for it! And do not forget to send it to Volodymyr Kushnir for check!",
+    "participants": [
+        {
+            "name": "Ruslan Danylevskyj",
+            "profile": "https://www.facebook.com/ruslan.danylevskyj",
+            "avatar": "./images/ruslan-danylevskyj.jpg"
+        }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2017-07-31",
+    "title": "Visit the football match",
+    "description": "Visit a football match in which FC Prykarpattya Ivano-Frankivsk and FC Polissya Zhytomyr will participate. The match will take place at the stadium \"Rukh\" in Ivano-Frankivsk, beginning at 18:00. Do not forget the ticket, please! :-)",
+    "participants": [
+        {
+            "name": "Ruslan Danylevskyj",
+            "profile": "https://www.facebook.com/ruslan.danylevskyj",
+            "avatar": "./images/ruslan-danylevskyj.jpg"
+        }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2017-08-01",
+    "title": "Finish the BSA 2017 Homework by React JS",
+    "description": "Be sure to finish the BSA 2017 React JS homework, because it is the last day for it! And do not forget to send it for check!",
+    "participants": [
+        {
+            "name": "Ruslan Danylevskyj",
+            "profile": "https://www.facebook.com/ruslan.danylevskyj",
+            "avatar": "./images/ruslan-danylevskyj.jpg"
+        }
+    ]
+  },
+  {
+    "id": 4,
+    "date": "2017-08-07",
+    "title": "BSA 2017 PHP Project. Meeting",
+    "description": "Meeting with the coach of the BSA PHP group.",
+    "todo_list": [
+        "definition of key tasks and time frames for their implementation",
+        "definition of development tools, libraries etc. needed to perform these tasks",
+        "and ... work, coding with best wishes to all! :-)"
+    ],
+    "participants": [
+        {
+            "name": "Sergey Bondarev",
+            "profile": "https://www.facebook.com/bondarev.serg",
+            "avatar": "./images/sergey-bondarev.jpg"
+        },
+        {
+            "name": "Ruslan Danylevskyj",
+            "profile": "https://www.facebook.com/ruslan.danylevskyj",
+            "avatar": "./images/ruslan-danylevskyj.jpg"
+        },
+        {
+            "name": "Denis Isaychenko",
+            "avatar": "./images/denis-isaychenko.jpg"
+        },
+        {
+            "name": "Maksym Kolesnykov",
+            "avatar": "./images/maksym-kolesnykov.jpg"
+        },
+        {
+            "name": "Marina Kruglova",
+            "avatar": "./images/marina-kruglova.jpg"
+        },
+        {
+            "name": "Misha Kaharlykskyi",
+            "avatar": "./images/misha-kaharlykskyi.jpg"
+        },
+        {
+            "name": "Mykola Ivashchuk",
+            "avatar": "./images/mykola-ivashchuk.jpg"
+        },
+        {
+            "name": "Petro Ostapuk",
+            "avatar": "./images/petro-ostapuk.jpg"
+        },
+        {
+            "name": "Sergii Bubalo",
+            "avatar": "./images/sergii-bubalo.jpg"
+        },
+        {
+            "name": "Vladimir Lench",
+            "avatar": "./images/vladimir-lench.jpg"
+        }
+    ]
+  },
+  {
+    "id": 5,
+    "date": "2017-08-11",
+    "title": "Clean in the apartment",
+    "todo_list": [
+        "wipe the dust off the furniture",
+        "find the vacuum cleaner and use it for the purpose :-)",
+        "the mop is also useful (just do not pour a lot of water!) :-))"
+    ]
+  }
+]
